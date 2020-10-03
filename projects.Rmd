@@ -1,0 +1,26 @@
+---
+title: "Projects"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    toc_depth: 3
+---
+<style type="text/css">
+h1.title {font-size: 1px;  color: White;}
+body, td {font-size: 18px;}
+code.r{font-size: 15px;}
+pre {font-size: 12px}
+</style>
+
+
+Coming soon.
+
+
+## Competition and Cooperation Relations of Chinese PE/VC
+
+## GPS Data
+
+## MCM 2017

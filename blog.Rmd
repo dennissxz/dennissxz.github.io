@@ -1,0 +1,232 @@
+---
+title: "Blog"
+output:
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    toc_depth: 2
+editor_options: 
+  chunk_output_type: console
+---
+<style type="text/css">
+h1.title {font-size: 1px;  color: White;}
+body, td {font-size: 18px;}
+code.r{font-size: 15px;}
+pre {font-size: 12px}
+</style>
+
+```{r set up, include=FALSE}
+# global options
+knitr::opts_chunk$set(fig.width=5, 
+                      fig.height=4, 
+                      fig.align="center")
+```
+
+# More about me
+
+## 
+## Favorite quotes
+
+> *而世之奇伟瑰怪非常之观，常在于险远，而人之所罕至焉。故非有志者不能至也。有志矣，不随以止也，然力不足者，亦不能至也。有志与力，而又不随以怠，至于幽暗昏惑而无物以相之，亦不能至也。然力足以至焉，于人为可讥，而在己为有悔；尽吾志也而不能至者，可以无悔矣，其孰能讥之乎？*
+>
+> <div style="text-align: right"> 王安石（1021-1086）, *《游褒禅山记》*</div>
+>
+> <span style="color:grey">Translation by Xie Baikui</span> 
+>
+> *So it is regrettable that numerous are excursionists visiting places which are near and easily accessible, but few are travelers who come to places far and dangerous, which, nevertheless, command the most sublime, grotesque and unique views, scarcely enjoyed by ordinary folks. One can never reach such places unless one has a strong will-power. But this alone, though unaffected by easy compliance with others’ inclination to remit one’s efforts, would not ensure the attainment of one’s goal, if not boosted by sufficient strength. A strong will-power and sufficient strength, though unaffected by that sort of easy compliance, would also fail to do so, if unassisted by extrinsic advantages, especially in dark and misleading circumstances. Given sufficient strength, failure to attain one’s objective entails scorn from others and regret from oneself. But, if one does not succeed in doing so after he has given full play to his will-power, he need not feel regret, and who would laugh him to scorn?* 
+>
+> <div style="text-align: right"> Wang Anshi (1021-1086), *A Trip to Baochan Mountain* </div>
+
+
+> *There is only one heroism in the world: to see the world as it is, and to love it.* 
+>
+> <div style="text-align: right"> Romain Rolland, *Life of Michelangelo* </div>
+
+> *I liked it, I was good at it, and I was really... I was alive.* 
+>
+> <div style="text-align: right"> Walter White, *Breaking Bad Finale*  </div>
+
+
+
+##
+## Hobbies
+
+* Hiking, squash, table tennis
+* Cooking, baking
+* Chinese calligraphy
+* FPS/TPS games, e.g. PUBG (吃鸡)
+* Trading index futures
+* Traveling
+
+
+***
+
+
+# Academic
+
+##
+## Visualization of multiple solutions of a least squares problem
+
+For a least squares problem
+
+$$\min_{\mathbf{x}\in \mathbb{R}^n} \Vert A \mathbf{x} -\mathbf{b}\Vert_2^2$$
+Suppose there is a solution $\mathbf{x}^*$. If matrix $A$ is not full rank, then there exists $\mathbf{x}_0\in null(A)$ and a scalar $k$ such that $\mathbf{x}=\mathbf{x}^*+k\mathbf{x}_0$ is also a solution, since
+$A\mathbf{x}=A\mathbf{x}^*+kA\mathbf{x}_0=A\mathbf{x}^*$.
+
+When I was learning this, I was thinking how multiple solutions should be like in a 3-D graph. Thus, I draw the surface of the function 
+$$f(\mathbf{x})=\Vert A \mathbf{x} -\mathbf{b}\Vert_2^2$$
+where $$A=\left[\begin{array}{cc}
+2 & -2\\
+4 & -4
+\end{array}\right], \mathbf{b}=\left[\begin{array}{cc}
+20 \\
+-10 
+\end{array}\right].$$
+
+
+Clearly, $A$ is singular. The set of solution is $\mathbf{x}=k[1,1]^\top$. This is reflected in the 3D-graph in the sense that the surface of the function $f(\mathbf{x})$ is "folded" along the line $y=x$, as shown below.
+
+```{r message=FALSE}
+library(plotly)
+
+f = matrix(0,10,10)
+for (x1 in 1:10){
+  for (x2 in 1:10){
+    f[x1,x2] = (20 - 2*x1 + 2*x2)^2 + (-10 - 4*x1 + 4*x2)^2
+  }
+}
+
+p <- plot_ly(z = ~f) %>% add_surface(
+  contours = list(
+    z = list(
+      show=TRUE,
+      usecolormap=TRUE,
+      highlightcolor="#ff0000",
+      project=list(z=TRUE)
+      )
+    )
+  ) %>%
+  layout(
+    scene = list(
+      camera=list(
+        eye = list(x=2, y=2, z=2)
+        )
+      )
+  )
+
+p
+
+```
+
+
+##
+## Tricks in math proof
+
+###
+### Inequalities
+
+* Holder's inequality
+
+* Basic inequality
+
+###
+### Borrow and return a term
+
+###
+### Proof by contradiction
+
+
+
+
+***
+#
+# LyX & LaTeX
+
+##
+## Shortcuts
+
+* $\pm,\oplus, \boldsymbol{\beta}$
+
+* `Insert > Math > Macro`
+
+* `Insert > Note > Comment`
+
+* `Insert > Formatting > Page Break / New Page`
+
+* `Ctrl + Enter` in math equation
+
+
+***
+#
+# R & R Markdown
+
+
+##
+## Shortcuts
+* [Cheatsheet from RStudio](https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
+
+* Knitr cache `{r cache = TRUE}`
+
+* Font size
+
+* Text alignment
+
+* Pic + Text
+
+* Show and run code but hide output
+`{r echo = T, results = 'hide'}`
+
+* Hide messages
+`{r message = F}`
+
+##
+##  Draw circles and ellipses
+
+Draw circles by `plotrix::draw.circle()`. Need to create a `plot` object first.
+
+```{r}
+# create an empty plot of coordinates
+# must set asp = 1
+plot(0:25, 0:25, type = 'n', asp = 1, xlab = "x", ylab = "y", main = "Circles") 
+library(plotrix)
+i=2
+draw.circle(x=5*i,y=i^2,radius=i, border=i, lty=1, lwd=1)
+
+# color
+i=3
+draw.circle(5*i,i^2,i, border=i, col=i, lty=1, lwd=1)
+
+# density
+i=4
+draw.circle(5*i,i^2,i, border=i, density=i^2, col = i, lty=1, lwd=1)
+```
+
+Draw epplipses by `ellipse::ellipse()`. Below is an example of drawing a confidence region of coefficients in an `lm` object.
+
+```{r message = F}
+# creat an lm object
+library(faraway)
+data(sat)
+m1 = lm(total~expend + ratio + salary + takers, data=sat)
+
+library(ellipse)
+# draw confidence region using ellipse function from ellipse library
+plot(ellipse(m1, which = c('salary','expend'), level = 0.95), 
+     type = 'l', col = 'red', 
+     xlab = "beta_salary", ylab = "beta_expend", main = "Confidence Region")
+
+# add confidence interval
+abline(v=confint(m1)['salary',],lty=2, col = 'blue')
+abline(h=confint(m1)['expend',],lty=2, col = 'blue')
+
+abline(v=0,lty=1, col = 'black')
+abline(h=0,lty=1, col = 'black')
+```
+
+***
+
+#
+
