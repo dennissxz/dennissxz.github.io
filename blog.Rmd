@@ -57,17 +57,30 @@ knitr::opts_chunk$set(fig.width=5,
 * Hiking, squash, table tennis
 * Cooking, baking
 * Chinese calligraphy
-* FPS/TPS games, e.g. PUBG (吃鸡)
+* First-/third-person shooter games, e.g. PUBG (吃鸡)
+  * Strategies matter more than tactics
 * Trading index futures
+  * Trading is a dialogue with the world
 * Traveling
 
 
 ***
 
 
-# Academic
+# Academics
 
-##
+
+
+## Notes in Mathematical Statistics I
+![](./pdfs/s301n.pdf){width=100% height=500}
+
+#
+
+
+## Notes in Generalized Linear Models
+![](./pdfs/s347n.pdf){width=100% height=500}
+
+#
 ## Visualization of multiple solutions of a least squares problem
 
 For a least squares problem
@@ -122,111 +135,6 @@ p
 ```
 
 
-##
-## Tricks in math proof
-
-###
-### Inequalities
-
-* Holder's inequality
-
-* Basic inequality
-
-###
-### Borrow and return a term
-
-###
-### Proof by contradiction
 
 
-
-
-***
-#
-# LyX & LaTeX
-
-##
-## Shortcuts
-
-* $\pm,\oplus, \boldsymbol{\beta}$
-
-* `Insert > Math > Macro`
-
-* `Insert > Note > Comment`
-
-* `Insert > Formatting > Page Break / New Page`
-
-* `Ctrl + Enter` in math equation
-
-
-***
-#
-# R & R Markdown
-
-
-##
-## Shortcuts
-* [Cheatsheet from RStudio](https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
-
-* Knitr cache `{r cache = TRUE}`
-
-* Font size
-
-* Text alignment
-
-* Pic + Text
-
-* Show and run code but hide output
-`{r echo = T, results = 'hide'}`
-
-* Hide messages
-`{r message = F}`
-
-##
-##  Draw circles and ellipses
-
-Draw circles by `plotrix::draw.circle()`. Need to create a `plot` object first.
-
-```{r}
-# create an empty plot of coordinates
-# must set asp = 1
-plot(0:25, 0:25, type = 'n', asp = 1, xlab = "x", ylab = "y", main = "Circles") 
-library(plotrix)
-i=2
-draw.circle(x=5*i,y=i^2,radius=i, border=i, lty=1, lwd=1)
-
-# color
-i=3
-draw.circle(5*i,i^2,i, border=i, col=i, lty=1, lwd=1)
-
-# density
-i=4
-draw.circle(5*i,i^2,i, border=i, density=i^2, col = i, lty=1, lwd=1)
-```
-
-Draw epplipses by `ellipse::ellipse()`. Below is an example of drawing a confidence region of coefficients in an `lm` object.
-
-```{r message = F}
-# creat an lm object
-library(faraway)
-data(sat)
-m1 = lm(total~expend + ratio + salary + takers, data=sat)
-
-library(ellipse)
-# draw confidence region using ellipse function from ellipse library
-plot(ellipse(m1, which = c('salary','expend'), level = 0.95), 
-     type = 'l', col = 'red', 
-     xlab = "beta_salary", ylab = "beta_expend", main = "Confidence Region")
-
-# add confidence interval
-abline(v=confint(m1)['salary',],lty=2, col = 'blue')
-abline(h=confint(m1)['expend',],lty=2, col = 'blue')
-
-abline(v=0,lty=1, col = 'black')
-abline(h=0,lty=1, col = 'black')
-```
-
-***
-
-#
 

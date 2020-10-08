@@ -8,8 +8,6 @@ navbar:
       href: cv.html
     - text: "Projects"
       href: projects.html
-    - text: "Notes"
-      href: notes.html
     - text: "Blog"
       href: blog.html
       

@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "",
+    "link": "denniszheng.github.io",
+    "text": "Dennis Zheng"
+  },
+  "text": {
+    "more": "This network describes the cooperation relations of private equities and venture capitals in china since 2010 to 2019. Data is scraped from cyzone.cn.\n\nEach node is an investor. Eash directed curve stands for a leader-follower relation between two investors in investment events. \nThe self-loop of a node represents the sole-investment events, i.e. no followers.\nA node is larger (and green) when it has more followers. \nCooperation is frequent among clustered nodes and rare among seperated nodes.\n\nWe can easily a cluster of see foreign funds: IDG, Sequoia, Matrix Partners, while there is another cluster of funds with a government leader Shenzhen Capital Group.\n\nThere are more interesting insights waiting for us to explore.\n\nThis visualization is powered by Oxford Internet Institute.\n",
+    "intro": "By Dennis Zheng\n",
+    "title": "Cooperation Relations of Private Equities and Venture Capitals in China from 2010 to 2019"
+  },
+  "legend": {
+    "edgeLabel": "Relation",
+    "colorLabel": "Number of co-investments",
+    "nodeLabel": "Investor"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": true,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
