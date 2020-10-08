@@ -49,7 +49,7 @@ For an interactive plot, see [here](https://dennissxz.github.io/pevc_network).
 
 This project analyzes the policy effect of Hong Kong Public Housing Program (公屋). The data is collected from Hong Kong Housing Authority and Hong Kong Census and Statistics Department. There are two main types of public housing in Hong Kong: PRH and TPS. PRH stands for public rental housing, while TPS stands for tenants purchase scheme, where residents can buy flats at a discounted price but there are restrictions on selling. Most PRH and TPS estates were built in the last century. The estates in the final phase of TPS were announced in 2005.
 
-One research question is where the public housing estated are distributed. We can visualize the estates on the map of Hong Kong. Darker color means older estate. The size of the circle represents the number of flats in that estate.
+One research question is where the public housing estated are distributed. We can visualize the estates on the map of Hong Kong. Darker color means older estates. The size of the circle represents the number of flats in that estate.
 
 ```{r housing interactive plot, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE}
 load('images/housing_loc.RData') 
@@ -58,7 +58,7 @@ tmap_mode("view")
 tm
 ```
 
-Upon the decease of a tenant, the flat will be returned to the government if certain conditions are met. As a result, we can use tenant's age from the census data set and life expectancy from the Hong Kong Life Tables to predict the expected return year of a flat. This information is useful for the government to better manage the supply and demand of the public housing program.
+Upon the decease of a tenant, the flat will be returned to the government if certain conditions are met. As a result, we can use tenant's age from the census data set and life expectancy from the Hong Kong Life Tables to predict the expected return year of a flat. This information is helpful for the government to better manage the supply and demand of the public housing program.
 
 ![](./images/PRH_alongYears.gif){width=100%}
 
@@ -81,4 +81,9 @@ In a team of three, we participated in 2017 [Mathematical Contest in Modeling](h
 We constructed a mathematical model to design a fan-in pattern. We ran sensitivity analysis, simulation, and conducted a hypothesis testing to conclude that the average throughput is significantly improved than the existing model, while the accident rate and building cost of the plaza roughly remain unchanged.
 
 Our model won the Outstanding Winner Prize which was awared to the top 13 teams from more than 8,000 teams worldwide.
+
+
+***
+
+More to come
 
