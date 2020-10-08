@@ -15,10 +15,16 @@ code.r{font-size: 15px;}
 pre {font-size: 12px}
 </style>
 
+<div id="pevc"></div>
 
-# 
+# PROJECTS
 
-## Cooperation Relations of Private Equities and Venture Capitals in China from 2010 to 2019
+
+
+*** 
+
+
+## Cooperation Relations of Private Equities and Venture Capitals in China
 
 *Technologies and Techniques: Python (selenium, beautifulSoup, numpy, pandas, opencv), Gephi, web scraping, data processing, data visualization.*
 
@@ -32,6 +38,8 @@ For an interactive plot, see [here](https://dennissxz.github.io/pevc_network).
 
 
 ![](./images/pevc_network.png){width=100%}
+<div id="housing"></div>
+<br/>  
 
 ***
 
@@ -57,6 +65,8 @@ Upon the decease of a tenant, the flat will be returned to the government if cer
 
 We can include other demographic variables of the tenants, or integrate other data sets, to conduct a more in-depth analysis of the public housing program, e.g. its relation to tenant's political stance, by applying advanced statistical models like multinomial logistic regression. These tasks were done when I was a research assistant at The Hong Kong Center for Economic Research in summer 2019.
 
+<div id="mcm"></div>
+<br/> 
 
 ***
 
