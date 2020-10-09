@@ -45,7 +45,7 @@ denniszheng@uchicago.edu
 
 
 <p style="text-align:justify">
-Hi, my name is Shaoxiong Zheng (郑少雄) and I go by Dennis. I was born and raised in Sichuan, China. After receiving my B.S. degree in Statistics and Finance with First Class Honors from The University of Hong Kong, now I am a master student in Statistics at UChicago. I am interested in how statistics can help human beings make decisions in this world of uncertainty, and I have co-authored a book to share my thinking. Currently, I am actively looking for a full-time job that requires strong analytical skills, such as data scientist and quantitative researcher/trader. 
+Hi, my name is Shaoxiong Zheng (郑少雄) and I go by Dennis. I was born and raised in Sichuan, China. After receiving my B.S. degree in Statistics and Finance with First Class Honors from The University of Hong Kong, now I am a master student in Statistics at UChicago. I am interested in how statistics can help human beings make decisions in this world of uncertainty, and I have co-authored a book to share my thinking. Currently, I am actively looking for a full-time job that requires strong data analytical skills, such as data scientist and quantitative researcher/trader. 
 
 </p>
 
