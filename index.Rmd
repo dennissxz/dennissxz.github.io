@@ -41,11 +41,12 @@ knitr::opts_chunk$set(fig.width=5,
 
 ### M.S. in Statistics Student at UChicago
 
-denniszheng@uchicago.edu
+[CV](https://dennissxz.github.io/pdfs/CV_DennisZheng.pdf) &nbsp;&nbsp;  denniszheng@uchicago.edu 
 
 
 <p style="text-align:justify">
-Hi, my name is Shaoxiong Zheng (郑少雄) and I go by Dennis. I was born and raised in Sichuan, China. After receiving my B.S. degree in Statistics and Finance with First Class Honors from The University of Hong Kong, now I am a master student in Statistics at UChicago. I am interested in how statistics can help human beings make decisions in this world of uncertainty, and I have co-authored a book to share my thinking. Currently, I am actively looking for a full-time job that requires strong data analytical skills, such as data scientist and quantitative researcher/trader. 
+
+Hi! My name is Shaoxiong Zheng (郑少雄) and I go by Dennis. I am now a master student in Statistics at UChicago. Prior to that, I studied Statistics and Finance with First Class Honors from the University of Hong Kong. I am curious how statistical methods can help human beings make decisions in this world of uncertainty, and I have co-authored a book to share my thinking. In particular, my interest focuses on developing machine learning algorithms for graph-structured data, with applications in social networks, recommender systems, and other domains.  
 
 </p>
 
