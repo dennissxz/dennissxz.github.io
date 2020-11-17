@@ -114,7 +114,7 @@ I like to applying statistics to life (Stat2Life) so that I can better understan
 
 ***
 
-## Interesting Problems
+## Problems
 
 During my high school years, one of my brilliant deskmates Yuanke Liu liked to design novel physics problems, and asked me to solve them. Usually these problems involve very basic concepts, but require your rigorous and out-of-the-box thinking. I found this way very helpful to check my understanding, and more importantly, train my ability to integrate basic concepts to solve non-trivial problems. 
 
