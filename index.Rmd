@@ -1,0 +1,61 @@
+---
+title: "Home"
+---
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150740237-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150740237-1');
+</script>
+
+
+
+<style type="text/css">
+h1.title {font-size: 1px;  color: White;}
+body, td {font-size: 18px;}
+code.r{font-size: 15px;}
+pre {font-size: 12px}
+</style>
+
+ 
+
+```{r set up, include=FALSE}
+# global options
+knitr::opts_chunk$set(fig.width=5, 
+                      fig.height=4, 
+                      fig.caption = T,
+                      fig.align="center", 
+                      cache = TRUE)
+```
+
+<br>
+
+
+<p>
+<img src="images/MS Photo square.jpg" alt="photo" style="width:370px;height:370px;margin-right:40px;" align="left"> 
+
+# Dennis (Shaoxiong) Zheng 
+
+### M.S. in Statistics Student at UChicago
+
+[CV](https://dennissxz.github.io/pdfs/CV_DennisZheng.pdf) &nbsp;&nbsp;  denniszheng@uchicago.edu 
+
+
+<p style="text-align:justify">
+
+Hi! My name is Shaoxiong Zheng (郑少雄) and I go by Dennis. I am now a master student in Statistics at UChicago. Prior to that, I studied Statistics and Finance with First Class Honors from the University of Hong Kong. I am curious how statistical methods can help human beings make decisions in this world of uncertainty, and I have co-authored a book to share my thinking. In particular, my interest focuses on developing machine learning algorithms for graph-structured data, with applications in social networks, recommender systems, and other domains.  
+
+</p>
+
+*Last update: `r Sys.Date()`*
+</p>
+
+
+
+
+
+
+
