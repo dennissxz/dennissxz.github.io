@@ -79,6 +79,7 @@ One research question is where the public housing estates are distributed. We ca
 load('images/housing_loc.RData')
 library(tmap)
 tmap_mode("view")
+tmap_options(basemaps =  c(Imagery = "Esri.WorldImagery")) # , Topological = "Esri.WorldTopoMap", Gray = "Esri.WorldGrayCanvas"
 tm
 ```
 
