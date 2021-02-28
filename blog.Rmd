@@ -2,7 +2,6 @@
 title: "Blog"
 output:
   html_document:
-    code_folding: hide
     toc: true
     toc_float:
       collapsed: false
@@ -28,11 +27,62 @@ knitr::opts_chunk$set(fig.width=5,
 
 # Blog
 
-*** 
+Here is my blog. It contains more information about me.
+
+---
+
+## Data Science Handbook
+
+I summarize theories, models, and questions in data science into an [online book](https://dennissxz.github.io/data-science-handbook). It will have three parts: Foundations, Algorithms, Machine Learning. I’m still writing it, and your feedback is highly appreciated.
 
 
-## 
+---
+
+## Stat2Life
+
+I like to applying statistical thinking to life (Stat2Life) so that I can better understand the world and make the right decisions. To share my thinking, I have co-authored a book [*How to Do the Right Thing Consistently*](https://www.amazon.com/Logic-Doing-Things-Always-Chinese/dp/722011172X) with my like-minded university schoolmate Junlin Fu. There are always new ideas coming up, and I briefly summarize some keywords here. 
+
+
+* Decision making: maximizing utility v.s. minimizing regret
+  cf. maximizing likelihood v.s. minimizing loss.
+  
+* Markov Chain, absorbing state, and failure.
+
+* Can one's utilty be a function of other's utility? The derivative can be positive, and can also be negative.
+
+---
+
+## Hobbies
+
+- Hiking, squash, table tennis
+
+- Cooking, baking
+
+  Cooking is fun, baking is my therapy
+
+- Chinese calligraphy
+
+  I practiced Chinese calligraph for nine years from 6 to 15. I am proficient in writing regular script (楷书) and clerical script (隶书). During Chinese Spring Festivals, I write Spring couplets for friends and relatives.
+
+- First-/third-person shooter games
+
+  Strategies matter more than tactics.
+  
+- Trading index futures
+  
+  Trading is a dialogue with the world.
+
+- Traveling
+  
+  I love exploring the world! I have been to 11 countries and regions, and I plan to make it 30 before my 30.
+
+---
+
 ## Favorite Quotes
+
+I belive one's favorite quotes can define his philosophy. Below are some of my favorite quotes.
+
+> *One moment can change a day, one day can change a life, and one life can change the world.*
 
 > *The best time to plant a tree is twenty years ago. The second-best time is now.* 
 >
@@ -56,149 +106,5 @@ knitr::opts_chunk$set(fig.width=5,
 > *I liked it, I was good at it, and I was really... I was alive.* 
 >
 > <div style="text-align: right"> Walter White, Breaking Bad Finale  </div>
-
-
-***
-
-## Hobbies
-
-- Hiking, squash, table tennis
-
-- Cooking, baking
-
-  Cooking is fun, baking is my therapy
-
-- Chinese calligraphy
-
-  I practiced Chinese calligraph for nine years from 6 to 15. I am proficient in writing regular script (楷书) and clerical script (隶书). During Chinese Spring Festivals, I write Spring couplets for friends and relatives.
-
-- First-/third-person shooter games, e.g. PUBG (吃鸡)
-
-  Strategies matter more than tactics.
-  
-- Trading index futures
-  
-  Trading is a dialogue with the world.
-
-- Traveling
-  
-  I love exploring the world! I have been to 11 countries and regions, and I plan to make it 30 before my 30.
-
-
-***
-
-## Course Notes 
-
-#### Mathematical Statistics I
-![](./pdfs/s301n.pdf){width=100% height=500}
-
-
-#### Generalized Linear Models
-![](./pdfs/s347n.pdf){width=100% height=500}
-
-
-***
-
-## Stat2Life
-
-I like to applying statistics to life (Stat2Life) so that I can better understand the world and make the right decisions. To share my thinking, I have co-authored a book [The Logic of Doing Things](https://www.amazon.com/Logic-Doing-Things-Always-Chinese/dp/722011172X) with my like-minded university schoolmate Junlin Fu. There are always new ideas coming up, and I briefly summarize some keywords here. If I have time I will add more details.
-
-
-* Markov Chain, absorbing state, and failure.
-
-* Decision making: maximizing utility v.s. minimizing regret
-  c.f. maximizing likelihood v.s. minimizing loss.
-
-* Can one's utilty be a function of other's utility? The derivative can be positive, and can also be negative.
-
-
-***
-
-## Problems
-
-During my high school years, one of my brilliant deskmates Yuanke Liu liked to design novel physics problems, and asked me to solve them. Usually these problems involve very basic concepts, but require your rigorous and out-of-the-box thinking. I found this way very helpful to check my understanding, and more importantly, train my ability to integrate basic concepts to solve non-trivial problems. 
-
-When I study statistics and machine learning, I also come up this kind of interesting problems. Below I list a couple of them. Some just check one's understanding of basic concepts, some can be exam questions, and some may look like brain teasers. 
-
-1. In a linear model without intercept, can $R^2$ be larger than 1? Can it be less than 0?
-
-1. Suppose $X_1$ and $X_2$ are two uniform random variables over $[0,1]$. Whether they are dependent or independent is unknown. What is the range of $E\{\max(X_1, X_2)\}$?
-
-1. Write math equations for the forward and backward propagation through a softmax function. This is to check your basic understanding of neural networks.
-
-1. Write Python code for the equations above. Well, this checks your coding skills. And of course, without loops.
-
-1. For a least square problem $\min_{\mathbf{x}\in \mathbb{R}^n} \Vert A \mathbf{x} -\mathbf{b}\Vert_2^2$, find the conditions on $A$ such that the problem has (i) a unique solution; (ii) multiple solutions. Give a sketch of the multiple solutions when $n=2$.
-
-1. Find the derivative of $x^x$. Show as many methods as you can.
-
-1. The basic and classic question: what is $p$-value? Give both mathematical definition and verbal explanation.
-
-1. Explain the logic behind hypothesis testing, verbally and mathematically. In particular, why do we reject the null hypothesis if the $p$-value is small than a threshold?
-
-1. What are type I error and type II error? What is the power of a test?
-
-1. What's the definition of "independent" of two random variables? Give both mathematical definition and verbal explanation.
-
-1. Give an example when $Corr(X_1, X_2)=0$ but $X_1$ and $X_2$ are dependent.
-
-1. What's the relation between maximizing likelihood and minimizing loss? Take a linear model as an example, write the likelihood function and the loss function, and explain their relation.
-
-Solutions to some of the problems:
-
-1. It depends on how you define $R^2$. TBC
-
-
-1. TBC
-
-1. TBC
-
-1. TBC
-
-1. Suppose there is a solution $\mathbf{x}^*$. If matrix $A$ is not full rank, then there exists $\mathbf{x}_0\in null(A)$ and a scalar $k$ such that $\mathbf{x}=\mathbf{x}^*+k\mathbf{x}_0$ is also a solution, since
-$A\mathbf{x}=A\mathbf{x}^*+kA\mathbf{x}_0=A\mathbf{x}^*$. Consider the objective function
-$$f(\mathbf{x})=\Vert A \mathbf{x} -\mathbf{b}\Vert_2^2$$
-  an example: $$A=\left[\begin{array}{cc}
-2 & -2\\
-4 & -4
-\end{array}\right], \mathbf{b}=\left[\begin{array}{cc}
-20 \\
--10 
-\end{array}\right].$$
-  Clearly, $A$ is singular. The set of solution is $\mathbf{x}=k[1,1]^\top$. This is reflected in the 3D-graph in the sense that the surface of the function $f(\mathbf{x})$ is "folded" along the line $y=x$, as shown below.
-
-```{r message=FALSE}
-library(plotly)
-
-f = matrix(0,10,10)
-for (x1 in 1:10){
-  for (x2 in 1:10){
-    f[x1,x2] = (20 - 2*x1 + 2*x2)^2 + (-10 - 4*x1 + 4*x2)^2
-  }
-}
-
-p <- plot_ly(z = ~f) %>% add_surface(
-  contours = list(
-    z = list(
-      show=TRUE,
-      usecolormap=TRUE,
-      highlightcolor="#ff0000",
-      project=list(z=TRUE)
-      )
-    )
-  ) %>%
-  layout(
-    scene = list(
-      camera=list(
-        eye = list(x=2, y=2, z=2)
-        )
-      )
-  )
-
-p
-
-```
-
-
 
 
