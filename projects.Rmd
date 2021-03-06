@@ -26,7 +26,7 @@ pre {font-size: 12px}
 
 ## Cooperation Relations of Private Equities and Venture Capitals in China
 
-*Technologies and Techniques: Python (selenium, beautifulSoup, numpy, pandas, opencv), Gephi, web scraping, data processing, data visualization.*
+*Technologies and Techniques: python (selenium, beautifulSoup, numpy, pandas, opencv), Gephi, web scraping, data processing, data visualization.*
 
 
 The networks describe the cooperation relations of private equities and venture capitals in China from 2010 to 2019. The data is scraped from cyzone.cn. Each node is an investor. Each directed curve stands for a leader-follower relation between two investors in investment events. The self-loop of a node represents the sole-investment events, i.e. no followers. A node is larger and brighter when it has more followers. Cooperation is more frequent among clustered nodes while rare among separated nodes.
@@ -45,7 +45,7 @@ For an interactive plot, see [here](https://dennissxz.github.io/pevc/gephi/inter
 
 ## Simulation of How a Disease Spreads throughout a Population
 
-*Technologies and Techniques: Python (numpy, pandas, matplotlib), agent-based models, ODE/PDE, simulation, data visualization.*
+*Technologies and Techniques: python (numpy, pandas, matplotlib), agent-based models, ODE/PDE, simulation, data visualization.*
 
 We study the spread of a disease using the Susceptible-Infectious-Rocovered (SIR) model and its variations. We start with the basic SIR model to help us choose interesting parameters.
 
@@ -94,13 +94,38 @@ We can include other demographic variables of the tenants, or integrate other da
 
 ---
 
+## Campus Catering Survey
+
+*Technologies and Techniques: clustering, principal component analysis, factor analysis, correspondence analysis, conjoint analysis.*
+
+In this course project, we analyze how HKU students feel about campus catering system and whether their dining preferences and tastes have been satisfied. Specifically, we 
+
+- segment HKU students with regards to their preferences when dining on campus.
+- figure out whether the needs of each segment have been met by the current set of catering services at HKU.
+- design a new canteen to generate the maximized market value with regards to a specific segment of students’ preferences.
+
+Statistical methods include:
+
+- factor analysis: find whether there are any underlying factors behind canteens attributes.
+- multidimensional scaling: gain insights of subject' preference for catering services.
+- cluster analysis: segment the surveyed subjects.
+- correspondence analysis: find canteens attributes perceived by students.
+- conjoint analysis: find the importance of essential factors when designing a new canteen.
+
+Our report can be found [here](https://dennissxz.github.io/campus-catering/report.pdf).
+
+<div  align="center">    
+<img src="./images/catering-ca.png" width="50%" alt="correspondence analysis" />
+</div>
+
+
+---
+
 ## A Mathematical Model for Traffic Merging at Toll Plazas
 
-*Technologies and Techniques: Mathematical modeling, sensitivity analysis, simulation, hypothesis testing.*
+*Technologies and Techniques: mathematical modeling, sensitivity analysis, simulation, hypothesis testing.*
 
 In a team of three, we participated in 2017 [Mathematical Contest in Modeling](https://www.comap.com/undergraduate/contests/mcm/) to optimize the merging process when the vehicles pass through toll plazas.
-
-
 
 We constructed a mathematical model to design a fan-in pattern. We ran sensitivity analysis, simulation, and conducted a hypothesis testing to conclude that the average throughput is significantly improved than the existing model, while the accident rate and building cost of the plaza roughly remain unchanged.
 
